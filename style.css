@@ -1,0 +1,125 @@
+
+/* 1. Réglages généraux */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #211D1C;
+    color: #EDE5D9;
+    font-family: Arial, sans-serif;
+}
+
+/* 2. En-tête et navigation */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 6%;
+    border-bottom: 1px solid #514744;
+}
+
+.logo {
+    color: #EDE5D9;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.navigation {
+    display: flex;
+    gap: 24px;
+}
+
+.navigation a {
+    color: #EDE5D9;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.navigation a:hover {
+    color: #C68A91;
+}
+
+/* 3. Présentation principale */
+
+.hero {
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.sur-titre {
+    color: #C68A91;
+    font-size: 11px;
+    letter-spacing: 4px;
+    margin-bottom: 30px;
+}
+
+.hero h1 {
+    font-family: Georgia, serif;
+    font-size: clamp(48px, 10vw, 120px);
+    line-height: 0.95;
+    letter-spacing: -3px;
+    margin-bottom: 30px;
+}
+
+.introduction {
+    color: #C8BDB2;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+/* 4. Bouton */
+
+.bouton {
+    color: #211D1C;
+    background-color: #EDE5D9;
+    padding: 15px 24px;
+    text-decoration: none;
+    font-size: 13px;
+    transition: background-color 0.3s;
+}
+
+.bouton:hover {
+    background-color: #C68A91;
+}
+
+/* 5. Pied de page */
+
+.footer {
+    padding: 25px;
+    text-align: center;
+    border-top: 1px solid #514744;
+    color: #C8BDB2;
+    font-size: 12px;
+}
+
+/* 6. Adaptation aux petits écrans */
+
+@media (max-width: 700px) {
+    .header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .navigation {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        letter-spacing: -1px;
+    }
+}
