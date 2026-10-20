@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #211D1C;
+    background-color: #000000;
     color: #EDE5D9;
     font-family: Arial, sans-serif;
 }
@@ -16,6 +16,7 @@ body {
 /* 2. En-tête et navigation */
 
 .header {
+    background-color: #f5f4f0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,30 +24,37 @@ body {
     border-bottom: 1px solid #514744;
 }
 
-.logo {
-    color: #EDE5D9;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-    letter-spacing: 2px;
+header img {
+    width: 120px;
+    height: auto;
+
 }
 
 .navigation {
     display: flex;
     gap: 24px;
 }
-
+/* ici il s'agit des differents boutons du header*/
 .navigation a {
-    color: #EDE5D9;
+    color:black;
     text-decoration: none;
+    font-family: "Aguafina Script", cursive;
     font-size: 13px;
 }
 
 .navigation a:hover {
-    color: #C68A91;
+    color: #e8dac2;
 }
 
 /* 3. Présentation principale */
+.hero img{
+    text-align: center;
+    height: auto;
+}
+
+.hero img{
+    width: 700px;
+}
 
 .hero {
     min-height: 75vh;
@@ -59,7 +67,7 @@ body {
 }
 
 .sur-titre {
-    color: #C68A91;
+    color: #cccccc;
     font-size: 11px;
     letter-spacing: 4px;
     margin-bottom: 30px;
@@ -75,7 +83,7 @@ body {
 
 .introduction {
     color: #C8BDB2;
-    font-size: 16px;
+    font-size: 10px;
     line-height: 1.7;
     margin-bottom: 35px;
 }
@@ -83,16 +91,16 @@ body {
 /* 4. Bouton */
 
 .bouton {
+    font-family: "Aguafina Script", cursive;
     color: #211D1C;
     background-color: #EDE5D9;
     padding: 15px 24px;
-    text-decoration: none;
     font-size: 13px;
     transition: background-color 0.3s;
 }
 
 .bouton:hover {
-    background-color: #C68A91;
+    background-color: #5c5c5c;
 }
 
 /* 5. Pied de page */
@@ -122,4 +130,10 @@ body {
     .hero h1 {
         letter-spacing: -1px;
     }
+} footer img {
+      height: auto;
+}
+
+footer img {
+    width: 200px;
 }
